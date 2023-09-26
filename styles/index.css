@@ -22,4 +22,33 @@ body {
   background-color: #010101;
   font-family: raleway_f, sans-serif;
   color: #fff;
+  line-height: 1.55;
+}
+
+.main__header {
+  position: relative;
+}
+.layers {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+}
+
+.layers__base {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+}
+.main-article {
+  min-height: 100vh;
 }
